@@ -4,13 +4,13 @@ import AddTodoForm from './components/AddTodoForm';
 import TodoList from './components/TodoList';
 import TotalCompleteItems from './components/TotalCompleteItems';
 
-const App = () => {
+const App:React.FC = () => {
 	return (
 		<div className='container bg-white p-4 mt-5'>
 			<h1>My Todo List</h1>
+			<TotalCompleteItems />
 			<AddTodoForm />
 			<TodoList />
-			<TotalCompleteItems />
 		</div>
 	);
 };
